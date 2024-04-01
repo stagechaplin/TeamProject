@@ -1,0 +1,88 @@
+/* 전체 적용 */
+
+*{padding:0;margin:0; height: 100%;}
+ul,ol{list-style:none}
+a{text-decoration:none;color:#fff;font-size:25px}
+nav{width:100%;overflow:hidden;height:60px;background-color:#000000; }
+
+
+/* 메인 홈 페이지 헤더 */
+#nav1 {
+  width: 100%;
+  position: relative ;
+  text-align: center ;
+  
+}
+#nav1>a {
+  line-height: 30px;
+  display: block;
+  font-size: 40px ;
+  font-weight: 900;
+  position: absolute;
+  left: 10px ;
+} 
+ #my{ position:absolute;
+  top: 10px;    
+  right: 50px;}
+
+#nav1>ul {
+  display: inline-block;
+}
+#nav1>ul li {
+  float: left;
+  line-height: 55px;
+  padding: 0 10px;
+}
+
+
+
+/* 카테고리 목록 */
+.text1{
+  display:flex;  /* 플렉스 컨테이너 지정 */
+  padding:20px;
+  margin-bottom:30px;
+  color:#fff;
+  font-size:20px;
+  justify-content: center;   
+}
+.iconbox{
+  display:flex;  /* 플렉스 컨테이너 지정 */
+  padding: 5% 20%;
+  color:#fff;
+  font-size:25px;
+  justify-content: space-around;
+}
+.icon > a > img{
+  width:130px;
+}
+.iconbox > p{
+  text-align:center;
+}
+#icontext{
+  text-align:center;
+  
+}
+
+/* 연습 */
+
+.video-background {
+  position: fixed; /* 비디오를 화면에 고정 */
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1; /* 콘텐츠가 비디오 위로 오도록 설정 */
+}
+
+.content {
+  position: relative; /* 콘텐츠 위치 조정 */
+  z-index: 100; /* 비디오 위에 표시되도록 z-index 설정 */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* 필요시 배경 투명도 조정 */
+  height: 2000px; /* 스크롤 테스트를 위한 높이 설정 */
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}

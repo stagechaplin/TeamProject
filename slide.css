@@ -1,0 +1,117 @@
+/* 슬라이드 */
+.wrap {
+  display: flex;
+  overflow: hidden;
+}
+.wrap .rolling-list ul {
+  display: flex;
+}
+.wrap .rolling-list ul li {
+  box-sizing: border-box;
+  width: 589px;
+  height: 276px;
+  border-radius: 30px;
+  margin: 0 20px;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.wrap .rolling-list ul li:nth-child(1){
+  background-color: #000000;
+}
+.wrap .rolling-list ul li:nth-child(2){
+  background-color: #000000;
+}
+.wrap .rolling-list ul li:nth-child(3) {
+  background-color: black;
+}
+.wrap .rolling-list ul li:nth-child(4) {
+  background-color: black;
+}
+.wrap .rolling-list ul li:nth-child(5) {
+  background-color: black;
+}
+
+.wrap .rolling-list ul li .image-wrap {
+  padding-right: 500px;
+  width: 300px;
+  flex-shrink: 0;
+}
+.wrap .rolling-list ul li .image-wrap > img {
+  width: 200%;
+}
+.rolling-list.original {
+animation: rollingleft1 50s linear infinite;
+}
+.rolling-list.clone {
+animation: rollingleft2 50s linear infinite;
+}
+
+@keyframes rollingleft1 {
+0% { transform: translateX(0); }
+50% { transform: translateX(-100%); }
+50.01% { transform: translateX(100%); }
+100% { transform: translateX(0); }
+}
+
+@keyframes rollingleft2 {
+0% { transition: translateX(0); }
+100% { transform: translateX(-200%); }
+}
+
+
+.wrap2 {
+  display: flex;
+  overflow: hidden;
+}
+.wrap2 .rolling-list2 ul {
+  display: flex;
+}
+.wrap2 .rolling-list2 ul li {
+  box-sizing: border-box;
+  width: 589px;
+  height: 276px;
+  border-radius: 30px;
+  margin: 0 20px;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.wrap .rolling-list ul li:nth-child(3){
+  background-color: #000000;
+}
+.wrap .rolling-list ul li:nth-child(4){
+  background-color: #000000;
+}
+
+
+.wrap2 .rolling-list2 ul li .image-wrap2 {
+  padding-right: 500px;
+  width: 300px;
+  flex-shrink: 0;
+}
+.wrap2 .rolling-list2 ul li .image-wrap2 > img {
+  width: 200%;
+}
+
+.rolling-list2.original2 {
+  animation: rollingleft3 50s linear infinite;
+  }
+  .rolling-list2.clone2 {
+  animation: rollingleft4 50s linear infinite;
+  }
+  
+  @keyframes rollingleft3 {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-100%); }
+  50.01% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+  }
+  
+  @keyframes rollingleft4 {
+  0% { transition: translateX(0); }
+  100% { transform: translateX(-200%); }
+  }
+  

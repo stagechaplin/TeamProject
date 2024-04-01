@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>흰색 티켓 아이콘</title>
+<style>
+.ticket {
+  width: 100px;
+  height: 60px;
+  background-color: white;
+  border: 2px solid #ccc;
+  position: relative;
+  border-radius: 5px;
+}
+
+.ticket:before,
+.ticket:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+}
+
+.ticket:before {
+  border-bottom-color: #ccc;
+  bottom: -20px;
+  left: 5px;
+}
+
+.ticket:after {
+  border-bottom-color: white;
+  bottom: -16px;
+  left: 7px;
+}
+</style>
+</head>
+<body>
+
+<div class="ticket"></div>
+
+</body>
+</html>
